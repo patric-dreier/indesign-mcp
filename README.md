@@ -8,6 +8,10 @@ geometry, parent pages & page numbers, inline character styling, frame
 refinements, and read/utility helpers. Verified by 415 unit tests + 79 live
 integration tests against InDesign 2026 (21.3.0.60).
 
+**Fork addition:** `get_frame_text` — returns a text frame's full,
+untruncated story content plus footnote count. Not covered by the test
+suite above; see PROJECT_STATE.md.
+
 See `docs/PROJECT_STATE.md` for current status, conventions, and what's not
 yet shipped. See `docs/superpowers/specs/` and `docs/superpowers/plans/` for
 the design specs and implementation plans behind each iteration.

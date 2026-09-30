@@ -22,6 +22,12 @@ Node/TS stdio MCP server emits ExtendScript bodies, dispatches via macOS
 | B6   | Frame refinements | `set_frame_inset`, `set_frame_columns`, `thread_text_frames` |
 | B7   | Polish & utility | `create_swatch`, `duplicate_frame`, `find_replace`, `list_paragraph_styles`, `list_pages` |
 
+**Fork-only additions (not in upstream bejaminjones/indesign-mcp):**
+
+| Tool | Purpose | Added |
+|------|---------|-------|
+| `get_frame_text` | Returns full untruncated story text + footnote count, for verifying Word-import fidelity (footnote/character-style loss checks) | 2026-09-30 |
+
 **Test counts:** 415 unit tests (run via `npm test`) + 79 live integration
 tests (run via `npm run test:integration` with InDesign 2026 open, requires
 `INDESIGN_MCP_INTEGRATION=1` env).
