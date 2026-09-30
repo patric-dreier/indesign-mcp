@@ -32,6 +32,7 @@ import { listPagesTool } from "./tools/list-pages.js";
 import { createSwatchTool } from "./tools/create-swatch.js";
 import { duplicateFrameTool } from "./tools/duplicate-frame.js";
 import { findReplaceTool } from "./tools/find-replace.js";
+import { getFrameTextTool } from "./tools/get-frame-text.js";
 
 async function main() {
   const logger = createLogger(defaultLogPath());
@@ -66,6 +67,7 @@ async function main() {
   registry.register(createSwatchTool);
   registry.register(duplicateFrameTool);
   registry.register(findReplaceTool);
+registry.register(getFrameTextTool);
 
   const server = createServer({ registry, logger });
   const transport = new StdioServerTransport();
